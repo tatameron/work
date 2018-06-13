@@ -7,9 +7,9 @@ get '/top' => 'root#top'
 
 post '/posts' => 'posts#create'
 
-get '/posts' => 'posts#'index'
+get '/posts' => 'posts#index'
 
-get '/posts/:id => 'post#show', as: 'post'
+get '/posts/:id' => 'post#show', as: 'post'
 
 
 end
