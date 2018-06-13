@@ -1,0 +1,9 @@
+<1>投稿一覧</1>
+
+<% @posts.each do |post| %>
+	<p>タイトル</p>
+
+	<span>
+      <%= link_to post.title, post_path(post.id) %> </span>
+
+	<% end %>
