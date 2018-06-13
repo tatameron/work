@@ -9,7 +9,9 @@ post '/posts' => 'posts#create'
 
 get '/posts' => 'posts#index'
 
-get '/posts/:id' => 'post#show', as: 'post'
+get '/posts/:id' => 'posts#show', as: 'post'
 
+get '/posts/:id/edit' => 'posts#edit', as: 'edit_post'
 
+patch '/posts/:id' => 'posts#upadate', as: 'update_post'
 end
